@@ -2,6 +2,7 @@ library(dplyr)
 library(ape)
 library(tidyr)
 library(purrr)
+source("branching.times.with.extinction.R")
 
 #' simulate a tree
 tree <- rtree(n = 20)
