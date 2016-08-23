@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/ -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Models of food web evolution | Assembling my Network</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./Models of food web evolution _ Assembling my Network_files/style.css">
+<link rel="pingback" href="https://assemblingnetwork.wordpress.com/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="Assembling my Network » Feed" href="https://assemblingnetwork.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Assembling my Network » Comments Feed" href="https://assemblingnetwork.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Assembling my Network » Models of food web evolution Comments Feed" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/feed/">
+	<script async="" src="./Models of food web evolution _ Assembling my Network_files/beacon.js"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<link rel="stylesheet" id="all-css-0" href="./Models of food web evolution _ Assembling my Network_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(1)"></script>
+<link rel="stylesheet" id="all-css-0" href="./Models of food web evolution _ Assembling my Network_files/style(1).css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://assemblingnetwork.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Network basics with R and igraph (part III of III)" href="https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/">
+<link rel="next" title="The tangled disentangled tangle" href="https://assemblingnetwork.wordpress.com/2013/08/23/the-tangled-disentangled-tangle/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/">
+<link rel="shortlink" href="http://wp.me/pXxDw-51">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fassemblingnetwork.wordpress.com%2F2013%2F08%2F13%2Fmodels-of-food-web-evolution%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fassemblingnetwork.wordpress.com%2F2013%2F08%2F13%2Fmodels-of-food-web-evolution%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Models of food web evolution">
+<meta property="og:url" content="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/">
+<meta property="og:description" content="The two major types of food web models are those that are static and phenomenological, and those that are dynamic. The first type includes models such as the cascade, niche and nested hierarchy mod…">
+<meta property="article:published_time" content="2013-08-13T14:48:07+00:00">
+<meta property="article:modified_time" content="2013-08-13T14:48:07+00:00">
+<meta property="og:site_name" content="Assembling my Network">
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=200&amp;ts=1471977336">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@JJ_Borrelli">
+<meta name="twitter:image" content="https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=240">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@JJ_Borrelli">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=16" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=16" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=114">
+<link rel="openid.server" href="https://assemblingnetwork.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://assemblingnetwork.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://assemblingnetwork.wordpress.com/osd.xml" title="Assembling my Network">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="theme-color" content="#1f0202">
+<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="Assembling my Network"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="The ecology is theoretical but the fun is real."><meta name="msapplication-task" content="name=Subscribe;action-uri=https://assemblingnetwork.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/1712b017e550cc58183e3bd3437c0150?s=16"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Models of food web evolution | Assembling my Network on WordPress.com">
+<meta name="description" content="The two major types of food web models are those that are static and phenomenological, and those that are dynamic. The first type includes models such as the cascade, niche and nested hierarchy models (I have talked about these models elsewhere). The static models use a set of rules to reproduce statistical patterns of food…">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #1f0202; }
+</style>
+<link rel="amphtml" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript" async="" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(2)"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Models of food web evolution _ Assembling my Network_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Models of food web evolution _ Assembling my Network_files/services.css"><script type="text/javascript" charset="utf-8" async="" src="./Models of food web evolution _ Assembling my Network_files/button.a1287ca71ce6e06bb8d64fd87cd04244.js"></script><script type="text/javascript" async="" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(3)"></script></head>
+
+<body class="single single-post postid-311 single-format-standard custom-background mp6 customizer-styles-applied single-author highlander-enabled highlander-light">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="https://assemblingnetwork.wordpress.com/" title="Assembling my Network" rel="home">Assembling my Network</a>
+					</span>
+				</div>
+				<div id="site-description">The ecology is theoretical but the fun is real.</div>
+
+										<a class="home-link" href="https://assemblingnetwork.wordpress.com/" title="Assembling my Network" rel="home">
+							<img src="./Models of food web evolution _ Assembling my Network_files/cropped-screen-shot-2013-05-31-at-10-23-48-pm.png" width="940" height="198" alt="">
+						</a>
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li><a href="https://assemblingnetwork.wordpress.com/">Home</a></li><li class="page_item page-item-2"><a href="https://assemblingnetwork.wordpress.com/star/">About</a></li><li class="page_item page-item-406 page_item_has_children"><a href="https://assemblingnetwork.wordpress.com/tutorials/">Tutorials</a><ul class="children"><li class="page_item page-item-408"><a href="https://assemblingnetwork.wordpress.com/tutorials/network-basics/">Network Basics</a></li></ul></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/" rel="prev"><span class="meta-nav">←</span> Network basics with R and igraph (part III of&nbsp;III)</a></div>
+					<div class="nav-next"><a href="https://assemblingnetwork.wordpress.com/2013/08/23/the-tangled-disentangled-tangle/" rel="next">The tangled disentangled&nbsp;tangle <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-311" class="post-311 post type-post status-publish format-standard hentry category-research tag-evolution tag-food-web tag-literature tag-model">
+											<h2 class="entry-title"><a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/" rel="bookmark">Models of food web&nbsp;evolution</a></h2>					
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/" title="10:48 AM" rel="bookmark"><span class="entry-date">August 13, 2013</span></a>						<span class="by-author"><span class="sep">by</span> <span class="author vcard"><a class="url fn n" href="https://assemblingnetwork.wordpress.com/author/jjborrelli/" title="View all posts by Jon Borrelli" rel="author">Jon Borrelli</a></span> </span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>The two major types of food web models are those that are static and phenomenological, and those that are dynamic. The first type includes models such as the cascade, niche and nested hierarchy models (I have talked about these models elsewhere). The static models use a set of rules to reproduce statistical patterns of food web topologies, and have proven valuable to food web research but they have their limitations. One criticism is that using these models forces us to use what are called “trophic food webs” where trophically similar species are collapsed into a single node. I think that the future of food web research lies in models that explicitly incorporate the dynamics of predator prey interactions. Within this class of models are two basic methods of building food webs. The two methods are using community assembly or evolution based algorithms. In this post I am going to briefly go over a number of models that are utilize evolution based algorithms to introduce new species to the community. The following is modified from an appendix I wrote for my dissertation proposal, with links to arXiv preprints (when available) or journals.</p>
+<p>There are five models of food webs based on evolution that have been proposed, as well as several modifications of some of these (<a href="https://dl.dropboxusercontent.com/u/997042/loeuille09.pdf" target="_blank">Loeuille &amp; Loreau 2010</a>). These models are not designed to be realistic representations of biological evolution. Instead they should be thought of as theoretical approximations of how coevolution may act to drive the construction of community interactions (<a href="http://www.sciencedirect.com/science/article/pii/S0022519302925300" target="_blank">Christensen <i>et al.</i> 2002</a>). The models I will describe here are Webworld (<a href="http://arxiv.org/abs/adap-org/9801003" target="_blank">Caldarelli <i>et al.</i> 1998</a>; <a href="http://arxiv.org/pdf/nlin/0002032.pdf" target="_blank">Drossel <i>et al.</i> 2001</a>, <a href="http://arxiv.org/pdf/q-bio/0401025.pdf" target="_blank">2004</a>), Recursive Evolutionary Branching (<a href="http://www.sciencedirect.com/science/article/pii/S0022519305002055" target="_blank">Ito &amp; Ikegami 2006</a>), Matching (<a href="http://arxiv.org/pdf/q-bio/0508002.pdf" target="_blank">Rossberg <i>et al.</i> 2006</a>), Tangled Nature (<a href="http://www.sciencedirect.com/science/article/pii/S0022519302925300" target="_blank">Christensen <i>et al.</i> 2002</a>; <a href="http://arxiv.org/pdf/cond-mat/0307114.pdf" target="_blank">Anderson &amp; Jensen 2005</a>), and Body Size Evolution (<a href="http://www.pnas.org/content/102/16/5761.short" target="_blank">Loeuille &amp; Loreau 2005</a>, <a href="https://dl.dropboxusercontent.com/u/997042/loeuille09.pdf" target="_blank">2010</a>).</p>
+<p>In the Webworld model species are defined by a particular set of abstract traits, which could in theory represent either morphological or behavioral characteristics (<a href="http://arxiv.org/abs/adap-org/9801003" target="_blank">Caldarelli <i>et al.</i> 1998</a>). Each species is assigned <i>L </i>traits out of a pool of <i>K</i> traits. It is important to note once again that these traits are abstract and only represented by integers <i>1… K</i>. A <i>KxK</i> matrix (<i>m</i>) is defined such that its elements <i>m<sub>ab</sub></i> represent the score of a particular trait <i>a</i> against trait <i>b</i>. Predator-prey relationships are thus assigned by summing the score of species <i>i </i>against species <i>j</i>, where a positive score means <i>i </i>is adapted to be a predator of <i>j</i> and 0 means no interaction (<a href="http://arxiv.org/pdf/nlin/0002032.pdf" target="_blank">Drossel <i>et al.</i> 2001</a>). Competition for resources is hierarchically based on predator scores for a given species, meaning that a higher score indicates a better competitor. Speciation in the Webworld model occurs probabilistically as a function of population size. When a speciation event occurs, the new species is generated by randomly replacing 1 of the <i>L</i> traits of the chosen species (constrained such that the event must generate a unique set of species traits).&nbsp; Other than the choice of <i>L </i>and <i>K</i>, the model has only three parameters to be set; the trophic efficiency of consumers, the total amount of external resources, and a parameter that determines the strength of competition (<a href="http://arxiv.org/abs/adap-org/9801003" target="_blank">Caldarelli <i>et al.</i> 1998</a>). This model does not consider individual variation, genetics, the mechanisms of speciation, and there is no distinction between the modes of reproduction (<a href="http://arxiv.org/abs/adap-org/9801003" target="_blank">Caldarelli <i>et al.</i> 1998</a>). It has, however, been used to consider the implications of varying the form of the functional response in predator-prey equations such that more realistic population dynamics can be incorporated (<a href="http://arxiv.org/pdf/nlin/0002032.pdf" target="_blank">Drossel <i>et al.</i> 2001</a>, <a href="http://arxiv.org/pdf/q-bio/0401025.pdf" target="_blank">2004</a>).</p>
+<p>I suppose the model proposed by Ito and Ikegami (2006) would be termed the Recursive Evolutionary Branching (REB) model although they do not explicitly name it. This model is essentially a continuous version of the Webworld model described above (<a href="https://dl.dropboxusercontent.com/u/997042/loeuille09.pdf" target="_blank">Loeuille &amp; Loreau 2010</a>). Unlike the Webworld model, however, in the REB model species are given two sets of traits; one for defining its location as a resource (resource traits), and one for defining the set of resources it uses (utilization traits). <a href="http://www.sciencedirect.com/science/article/pii/S0022519305002055" target="_blank">Ito and Ikegami (2006)</a> assumed a single dimensional resource space and a two dimensional phenotype space to reduce the complexity of the model. In other words, given a 1 dimensional resource space each of the <i>k</i> species has a distribution describing it as a resource and a distribution describing the resources it utilizes. The distributions were described by a delta function. Evolutionary dynamics in the REB model are described as a diffusion process where most species are assumed to have a large number of individuals and the magnitude of a mutation is assumed to be small.</p>
+<p>The Matching model (<a href="http://arxiv.org/pdf/q-bio/0508002.pdf" target="_blank">Rossberg <i>et al.</i> 2006</a>) combines parts of both the Webworld and REB models. Like the Webworld model the Matching model represents species as a set of traits, and like the REB model there is a set of traits describing it as a resource (vulnerability) and as a predator (foraging). Additionally unlike either model these traits are represented as binary character strings with a defined length <i>n</i>. The strength of an interaction is then defined as the number of predator foraging traits that match prey vulnerability traits, so long as it exceeds some threshold value (defining the presence of a link).&nbsp; Additionally, species are given a parameter which defines the size of a species, and they can only consume prey that are below a size threshold defined as their lambda more than their size (<a href="http://arxiv.org/pdf/q-bio/0508002.pdf" target="_blank">Rossberg <i>et al.</i> 2006</a>). Lambda is a loopiness parameter, determining the probability of a trophic loop occurring. Unlike the previously described models the Matching model does not explicitly incorporate population dynamics, instead defining extinction, speciation, and invasion probability with specified parameters. New species invading the system are given their two binary trait sets and size randomly, while speciation events cause foraging and vulnerability traits to flip with a given probability and a random value (from a standard normal distribution) is added to the size parameter. This model assumes that evolution in all directions is equally likely.</p>
+<p>I will only briefly outline the Tangled Nature model, as I do not anticipate using it in my research (and it gets confusing). The model is unique in that it may incorporate multiple interaction types, rather than being restricted to trophic interactions (<a href="https://dl.dropboxusercontent.com/u/997042/loeuille09.pdf" target="_blank">Loeuille &amp; Loreau 2010</a>). Additionally it is an individual based model, rather than focusing on populations or species as the base unit. Individuals are defined as a binary string of “alleles” of length <i>L</i>, which are allowed to mutate with a defined probability. The model assumes that the interactions between species are determined by the interaction between the <i>L </i>loci. The strength of the interaction is given by a matrix with terms drawn from the uniform distribution along an interval of [-c,c] with a given probability.</p>
+<p>While the first four models described typically utilize multiple traits to describe the interactions between organisms, the Body Size Evolution model uses only a single trait (body size, as the name implies). <a href="http://www.pnas.org/content/102/16/5761.short" target="_blank">Loeiulle and Loreau (2005)</a> developed a model of community evolution where each species is given a characteristic body size. This body size allows demography to be determined based on allometric relationships, trophic interactions to be described by defining an optimum feeding size range, and competition based on similar body sizes to be modeled. Population dynamics are modeled using differential equations with allometrically determined production efficiency (growth rate) and mortality, as well as functions describing consumption and competition based on body size differences between species. Basal species in the model consume inorganic nutrient, which is also modeled with a differential equation describing its rate of change as a function of input, output, and nutrient recycling. Species are modified at a rate (usually 10<sup>-6</sup>) per unit biomass at each time step. If a given population has a mutation event a new daughter population is created with a body size that is drawn from a uniform distribution along the interval [0.8<i>x</i>, 1.2<i>x</i>] where <i>x</i> is the parent body size.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/?share=email&amp;nb=1" target="_blank" title="Click to email"><span>Email</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-311" class="share-facebook sd-button share-icon" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-311" class="share-twitter sd-button share-icon" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-311" class="share-google-plus-1 sd-button share-icon" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-14190654-311-57bc977824830" data-src="//widgets.wp.com/likes/#blog_id=14190654&amp;post_id=311&amp;origin=assemblingnetwork.wordpress.com&amp;obj_id=14190654-311-57bc977824830" data-name="like-post-frame-14190654-311-57bc977824830"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-14190654-311-57bc977824830" height="55px" width="100%" frameborder="0" src="./Models of food web evolution _ Assembling my Network_files/saved_resource.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="53" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://assemblingnetwork.wordpress.com/2012/08/30/this-link-is-forbidden-but-not-because-of-your-niche/" title="This link is forbidden, but not because of your niche...
+
+A new article was published this past month in PLoS ONE by Elsa Canard and colleagues about how neutral dynamics can shape the structure of trophic networks. They note that simply by assuming that species are interacting at random, and therefore the probability of any two species interacting is a…" rel="nofollow" data-origin="311" data-position="0">This link is forbidden, but not because of your niche...</a></span><span class="jp-relatedposts-post-context">In "New Papers"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="92" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://assemblingnetwork.wordpress.com/2012/10/04/neutral-networks-in-r/" title="Neutral networks in R?
+
+I have been reading a little about neutral dynamics in food web models (posted here). So while I was procrastinating working hard, I thought that I would try and write up some R code to generate static food webs using neutral processes. I am still new to this, so it…" rel="nofollow" data-origin="311" data-position="1">Neutral networks in R?</a></span><span class="jp-relatedposts-post-context">In "Musings"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="68" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://assemblingnetwork.wordpress.com/2012/09/07/food-web-plotting-in-r/" title="Food web plotting in R
+
+The past few weeks I have been getting into R to play around with network analysis. Primarily I have been using the package igraph to generate and plot networks (random and downloaded from various datasets). So far it has been relatively easy to figure out (I am an R newbie)…" rel="nofollow" data-origin="311" data-position="2">Food web plotting in R</a></span><span class="jp-relatedposts-post-context">In "Research"</span></p></div></div></div>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+												This entry was posted in <a href="https://assemblingnetwork.wordpress.com/category/research/" rel="category tag">Research</a> and tagged <a href="https://assemblingnetwork.wordpress.com/tag/evolution/" rel="tag">evolution</a>, <a href="https://assemblingnetwork.wordpress.com/tag/food-web/" rel="tag">food web</a>, <a href="https://assemblingnetwork.wordpress.com/tag/literature/" rel="tag">literature</a>, <a href="https://assemblingnetwork.wordpress.com/tag/model/" rel="tag">model</a>. Bookmark the <a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/" title="Permalink to Models of food web evolution" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="https://assemblingnetwork.wordpress.com/2013/07/01/network-basics-with-r-and-igraph-part-iii-of-iii/" rel="prev"><span class="meta-nav">←</span> Network basics with R and igraph (part III of&nbsp;III)</a></div>
+					<div class="nav-next"><a href="https://assemblingnetwork.wordpress.com/2013/08/23/the-tangled-disentangled-tangle/" rel="next">The tangled disentangled&nbsp;tangle <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+
+				<div id="respond" class="comment-respond js">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://assemblingnetwork.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="ab23ac3b89"><input type="hidden" name="_wp_http_referer" value="/2013/08/13/models-of-food-web-evolution/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 24px; width: 618px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 44px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(11).html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./Models of food web evolution _ Assembling my Network_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Models of food web evolution _ Assembling my Network_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Models of food web evolution _ Assembling my Network_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Models of food web evolution _ Assembling my Network_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Models of food web evolution _ Assembling my Network_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="311" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="73d06abca1"></p>
+<input type="hidden" name="genseq" value="1471977336">
+<p style="display: none;"></p>				<input type="hidden" id="ak_js" name="ak_js" value="1471977336772"></form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+						<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://assemblingnetwork.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="https://assemblingnetwork.wordpress.com/2014/08/04/playing-with-data/">Playing with data</a>
+						</li>
+					<li>
+				<a href="https://assemblingnetwork.wordpress.com/2014/07/31/eltons-footsteps-thursday-review/">Elton’s footsteps – Thursday&nbsp;Review</a>
+						</li>
+					<li>
+				<a href="https://assemblingnetwork.wordpress.com/2014/07/28/a-shiny-new-rmarkdown-for-the-win/">A shiny new Rmarkdown for the&nbsp;win!</a>
+						</li>
+					<li>
+				<a href="https://assemblingnetwork.wordpress.com/2014/07/24/linneaus-wormy-fish-thursday-review/">Linneaus’ wormy fish – Thursday&nbsp;Review</a>
+						</li>
+					<li>
+				<a href="https://assemblingnetwork.wordpress.com/2014/07/21/writelatex-for-collaboration/">writeLaTex for collaboration</a>
+						</li>
+				</ul>
+		</li>		<li id="wp_tag_cloud-2" class="widget-container wp_widget_tag_cloud"><h3 class="widget-title">Tags</h3><div style="overflow:hidden"><a href="https://assemblingnetwork.wordpress.com/tag/barabasi/" class="tag-link-2224082 tag-link-position-1" title="2 topics" style="font-size: 10.8pt;">Barabási</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/bascompte/" class="tag-link-126708557 tag-link-position-2" title="3 topics" style="font-size: 12.666666666667pt;">Bascompte</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/basics/" class="tag-link-8516 tag-link-position-3" title="1 topic" style="font-size: 8pt;">basics</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/blog/" class="tag-link-273 tag-link-position-4" title="1 topic" style="font-size: 8pt;">blog</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/blogs/" class="tag-link-460 tag-link-position-5" title="1 topic" style="font-size: 8pt;">blogs</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/bolker/" class="tag-link-26331177 tag-link-position-6" title="2 topics" style="font-size: 10.8pt;">Bolker</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/bugs/" class="tag-link-6354 tag-link-position-7" title="1 topic" style="font-size: 8pt;">bugs</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/cloud/" class="tag-link-69816 tag-link-position-8" title="1 topic" style="font-size: 8pt;">cloud</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/code/" class="tag-link-656 tag-link-position-9" title="11 topics" style="font-size: 20.133333333333pt;">code</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/coe/" class="tag-link-755717 tag-link-position-10" title="1 topic" style="font-size: 8pt;">CoE</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/coevolution/" class="tag-link-2987336 tag-link-position-11" title="5 topics" style="font-size: 15.466666666667pt;">coevolution</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/comparison/" class="tag-link-34455 tag-link-position-12" title="1 topic" style="font-size: 8pt;">comparison</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/complexity/" class="tag-link-3494 tag-link-position-13" title="2 topics" style="font-size: 10.8pt;">complexity</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/data/" class="tag-link-22379 tag-link-position-14" title="5 topics" style="font-size: 15.466666666667pt;">data</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/desolve/" class="tag-link-36068475 tag-link-position-15" title="3 topics" style="font-size: 12.666666666667pt;">deSolve</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/eco-evolutionary/" class="tag-link-26193448 tag-link-position-16" title="1 topic" style="font-size: 8pt;">eco-evolutionary</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/ecology/" class="tag-link-4907 tag-link-position-17" title="1 topic" style="font-size: 8pt;">ecology</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/empirical/" class="tag-link-1523194 tag-link-position-18" title="5 topics" style="font-size: 15.466666666667pt;">empirical</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/euler/" class="tag-link-574285 tag-link-position-19" title="1 topic" style="font-size: 8pt;">Euler</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/evolution/" class="tag-link-11940 tag-link-position-20" title="2 topics" style="font-size: 10.8pt;">evolution</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/food-chain/" class="tag-link-658451 tag-link-position-21" title="1 topic" style="font-size: 8pt;">food chain</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/food-chains-and-webs/" class="tag-link-61293173 tag-link-position-22" title="1 topic" style="font-size: 8pt;">food chains and webs</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/food-web/" class="tag-link-2730324 tag-link-position-23" title="12 topics" style="font-size: 20.6pt;">food web</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/geographic-mosaic/" class="tag-link-106829212 tag-link-position-24" title="1 topic" style="font-size: 8pt;">geographic mosaic</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/graph-theory/" class="tag-link-751916 tag-link-position-25" title="1 topic" style="font-size: 8pt;">graph theory</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/ideas/" class="tag-link-374 tag-link-position-26" title="1 topic" style="font-size: 8pt;">ideas</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/igraph/" class="tag-link-14087198 tag-link-position-27" title="1 topic" style="font-size: 8pt;">igraph</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/indices/" class="tag-link-18551 tag-link-position-28" title="4 topics" style="font-size: 14.222222222222pt;">indices</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/inspiration/" class="tag-link-107 tag-link-position-29" title="2 topics" style="font-size: 10.8pt;">inspiration</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/interaction/" class="tag-link-16804 tag-link-position-30" title="3 topics" style="font-size: 12.666666666667pt;">interaction</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/isle-royale/" class="tag-link-6241141 tag-link-position-31" title="1 topic" style="font-size: 8pt;">Isle Royale</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/issues/" class="tag-link-629 tag-link-position-32" title="6 topics" style="font-size: 16.555555555556pt;">issues</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/jurassic-park/" class="tag-link-667470 tag-link-position-33" title="1 topic" style="font-size: 8pt;">Jurassic Park</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/linked/" class="tag-link-13782 tag-link-position-34" title="1 topic" style="font-size: 8pt;">Linked</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/literature/" class="tag-link-557 tag-link-position-35" title="4 topics" style="font-size: 14.222222222222pt;">literature</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/lotka-volterra/" class="tag-link-7730192 tag-link-position-36" title="3 topics" style="font-size: 12.666666666667pt;">Lotka-Volterra</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/methods/" class="tag-link-22400 tag-link-position-37" title="3 topics" style="font-size: 12.666666666667pt;">methods</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/model/" class="tag-link-8846 tag-link-position-38" title="4 topics" style="font-size: 14.222222222222pt;">model</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/modularity/" class="tag-link-101852 tag-link-position-39" title="1 topic" style="font-size: 8pt;">modularity</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/mutualisms/" class="tag-link-17206824 tag-link-position-40" title="1 topic" style="font-size: 8pt;">mutualisms</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/nestedness/" class="tag-link-168412621 tag-link-position-41" title="2 topics" style="font-size: 10.8pt;">nestedness</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/network/" class="tag-link-3385 tag-link-position-42" title="15 topics" style="font-size: 22pt;">network</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/neutral/" class="tag-link-15130 tag-link-position-43" title="2 topics" style="font-size: 10.8pt;">neutral</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/news-2/" class="tag-link-75292 tag-link-position-44" title="5 topics" style="font-size: 15.466666666667pt;">news</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/niche-model/" class="tag-link-10948494 tag-link-position-45" title="1 topic" style="font-size: 8pt;">niche model</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/null-model/" class="tag-link-106913675 tag-link-position-46" title="3 topics" style="font-size: 12.666666666667pt;">null model</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/oikos/" class="tag-link-86085 tag-link-position-47" title="1 topic" style="font-size: 8pt;">Oikos</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/omnivory/" class="tag-link-5458733 tag-link-position-48" title="1 topic" style="font-size: 8pt;">omnivory</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/paradox/" class="tag-link-19479 tag-link-position-49" title="1 topic" style="font-size: 8pt;">paradox</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/parasites/" class="tag-link-48271 tag-link-position-50" title="4 topics" style="font-size: 14.222222222222pt;">parasites</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/phylogeny/" class="tag-link-275341 tag-link-position-51" title="1 topic" style="font-size: 8pt;">phylogeny</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/plant-pollinator/" class="tag-link-95308381 tag-link-position-52" title="2 topics" style="font-size: 10.8pt;">plant-pollinator</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/pleistocene/" class="tag-link-1658222 tag-link-position-53" title="1 topic" style="font-size: 8pt;">Pleistocene</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/predator-prey/" class="tag-link-1053383 tag-link-position-54" title="7 topics" style="font-size: 17.333333333333pt;">predator-prey</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/qualitative/" class="tag-link-32163 tag-link-position-55" title="1 topic" style="font-size: 8pt;">qualitative</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/question/" class="tag-link-395 tag-link-position-56" title="1 topic" style="font-size: 8pt;">question</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/quote/" class="tag-link-3099 tag-link-position-57" title="3 topics" style="font-size: 12.666666666667pt;">quote</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/r/" class="tag-link-10189 tag-link-position-58" title="15 topics" style="font-size: 22pt;">R</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/reading/" class="tag-link-1473 tag-link-position-59" title="2 topics" style="font-size: 10.8pt;">reading</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/research-2/" class="tag-link-6860834 tag-link-position-60" title="1 topic" style="font-size: 8pt;">research</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/resources/" class="tag-link-1784 tag-link-position-61" title="7 topics" style="font-size: 17.333333333333pt;">resources</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/rewilding/" class="tag-link-159556 tag-link-position-62" title="1 topic" style="font-size: 8pt;">rewilding</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/robert-may/" class="tag-link-14806926 tag-link-position-63" title="2 topics" style="font-size: 10.8pt;">Robert May</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/seville/" class="tag-link-49287 tag-link-position-64" title="2 topics" style="font-size: 10.8pt;">Seville</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/stability/" class="tag-link-151032 tag-link-position-65" title="4 topics" style="font-size: 14.222222222222pt;">stability</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/statistics/" class="tag-link-5849 tag-link-position-66" title="2 topics" style="font-size: 10.8pt;">statistics</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/structure/" class="tag-link-25716 tag-link-position-67" title="4 topics" style="font-size: 14.222222222222pt;">structure</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/supernetwork/" class="tag-link-16603487 tag-link-position-68" title="1 topic" style="font-size: 8pt;">supernetwork</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/theory/" class="tag-link-3549 tag-link-position-69" title="2 topics" style="font-size: 10.8pt;">theory</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/thoughts/" class="tag-link-563 tag-link-position-70" title="4 topics" style="font-size: 14.222222222222pt;">thoughts</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/trophic-level/" class="tag-link-26784565 tag-link-position-71" title="1 topic" style="font-size: 8pt;">trophic level</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/trophic-relationships/" class="tag-link-25246943 tag-link-position-72" title="1 topic" style="font-size: 8pt;">trophic relationships</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/victoria/" class="tag-link-36523 tag-link-position-73" title="2 topics" style="font-size: 10.8pt;">Victoria</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/wolves/" class="tag-link-19632 tag-link-position-74" title="1 topic" style="font-size: 8pt;">wolves</a>
+<a href="https://assemblingnetwork.wordpress.com/tag/zoo/" class="tag-link-6117 tag-link-position-75" title="1 topic" style="font-size: 8pt;">zoo</a></div></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href="https://assemblingnetwork.wordpress.com/2014/08/">August 2014</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2014/07/">July 2014</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2014/05/">May 2014</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2014/03/">March 2014</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/09/">September 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/08/">August 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/07/">July 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/06/">June 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/05/">May 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/04/">April 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/03/">March 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/02/">February 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2013/01/">January 2013</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2012/11/">November 2012</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2012/10/">October 2012</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2012/09/">September 2012</a></li>
+	<li><a href="https://assemblingnetwork.wordpress.com/2012/08/">August 2012</a></li>
+		</ul>
+		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-332"><a href="https://assemblingnetwork.wordpress.com/category/coding/">Coding</a>
+</li>
+	<li class="cat-item cat-item-858"><a href="https://assemblingnetwork.wordpress.com/category/essay/">Essay</a>
+</li>
+	<li class="cat-item cat-item-272"><a href="https://assemblingnetwork.wordpress.com/category/fun/">Fun</a>
+</li>
+	<li class="cat-item cat-item-109377893"><a href="https://assemblingnetwork.wordpress.com/category/learning-r/">LeaRning R</a>
+</li>
+	<li class="cat-item cat-item-2007"><a href="https://assemblingnetwork.wordpress.com/category/musings/">Musings</a>
+</li>
+	<li class="cat-item cat-item-5143077"><a href="https://assemblingnetwork.wordpress.com/category/new-papers/">New Papers</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="https://assemblingnetwork.wordpress.com/category/news/">News</a>
+</li>
+	<li class="cat-item cat-item-1035"><a href="https://assemblingnetwork.wordpress.com/category/other/">Other</a>
+</li>
+	<li class="cat-item cat-item-73596"><a href="https://assemblingnetwork.wordpress.com/category/question-2/">Question</a>
+</li>
+	<li class="cat-item cat-item-170747971"><a href="https://assemblingnetwork.wordpress.com/category/rbasics/">Rbasics</a>
+</li>
+	<li class="cat-item cat-item-668"><a href="https://assemblingnetwork.wordpress.com/category/research/">Research</a>
+</li>
+	<li class="cat-item cat-item-18529796"><a href="https://assemblingnetwork.wordpress.com/category/software-carpentry/">Software Carpentry</a>
+</li>
+	<li class="cat-item cat-item-32671576"><a href="https://assemblingnetwork.wordpress.com/category/thursday-review/">Thursday Review</a>
+</li>
+	<li class="cat-item cat-item-10452022"><a href="https://assemblingnetwork.wordpress.com/category/writing-2/">Writing</a>
+</li>
+		</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+				<li id="blog_subscription-3" class="widget-container widget_blog_subscription"><h3 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h3>
+				<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+						<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" value="" id="subscribe-field"></p>
+					
+					<p>
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="14190654">
+						<input type="hidden" name="source" value="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/">
+						<input type="hidden" name="sub-type" value="widget">
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-3">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="c0285b6ea8">						<input type="submit" value="Follow">
+					</p>
+				</form>
+			
+</li><li id="twitter-3" class="widget-container widget_twitter"><h3 class="widget-title"><a href="http://twitter.com/JJ_Borrelli">The Twitter</a></h3><ul class="tweets">
+			<li>
+				@<a href="http://twitter.com/McCannEcology">McCannEcology</a> that's not the N train! 				<a href="http://twitter.com/JJ_Borrelli/statuses/753032439618998276" class="timesince">1&nbsp;month&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a href="http://twitter.com/monsoontrader">monsoontrader</a> thanks! 				<a href="http://twitter.com/JJ_Borrelli/statuses/731109327373733888" class="timesince">3&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				Ready to defend my dissertation this morning <a href="https://t.co/lAije4X7Av" rel="nofollow">https://t.co/lAije4X7Av</a> 				<a href="http://twitter.com/JJ_Borrelli/statuses/731107269736337408" class="timesince">3&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				@<a href="http://twitter.com/RallidaeRule">RallidaeRule</a> @<a href="http://twitter.com/sciencegurlz0">sciencegurlz0</a> +1 for figshare, really easy to upload all files associated with a project 				<a href="http://twitter.com/JJ_Borrelli/statuses/722858659206696961" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href="http://twitter.com/TrevorABranch">TrevorABranch</a>: My method to create animated gifs using R plus the website <span class="skimlinks-unlinked">gifmaker.me</span> @<a href="http://twitter.com/PhilGanz">PhilGanz</a> <a href="http://twitter.com/search?q=%23Rstats">#Rstats</a> <a href="http://twitter.com/search?q=%23DataViz">#DataViz</a> <a href="https://t.co/cVXS8KX6Vx" rel="nofollow">https://t.co/cVXS8KX6Vx</a> 				<a href="http://twitter.com/JJ_Borrelli/statuses/720656198387834880" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			</ul><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./Models of food web evolution _ Assembling my Network_files/follow_button.d73d0c4cb6af3df0ea22b7c11dbc87d2.en.html" style="position: static; visibility: visible; width: 130px; height: 20px;" data-screen-name="JJ_Borrelli"></iframe></li><li id="jp_blogs_i_follow-2" class="widget-container widget_jp_blogs_i_follow"><h3 class="widget-title">Blogs I Follow</h3><ol><li><a href="http://blog.globalbioticinteractions.org/" class="bump-view" data-bump-view="bif">Global Biotic Interactions</a></li><li><a href="http://lynchlab.com/" class="bump-view" data-bump-view="bif">Lynch Lab</a></li><li><a href="http://mathecolic.wordpress.com/" class="bump-view" data-bump-view="bif">MathEcol-ic</a></li><li><a href="http://telliamedrevisited.wordpress.com/" class="bump-view" data-bump-view="bif">Telliamed Revisited</a></li><li><a href="http://ecologistatwork.blogspot.com/" class="bump-view" data-bump-view="bif">Ecologist At Work</a></li><li><a href="http://scientificgems.wordpress.com/" class="bump-view" data-bump-view="bif">Scientific Gems</a></li><li><a href="http://bioteaching.com/" class="bump-view" data-bump-view="bif">Teaching Biology</a></li><li><a href="http://theupturnedmicroscope.com/" class="bump-view" data-bump-view="bif">The Upturned Microscope</a></li><li><a href="http://earlycareerecologists.wordpress.com/" class="bump-view" data-bump-view="bif">Early Career Ecologists</a></li><li><a href="http://laurelburytales.wordpress.com/" class="bump-view" data-bump-view="bif">The Laurelbury Tales</a></li><li><a href="https://assemblingnetwork.wordpress.com/" class="bump-view" data-bump-view="bif">Assembling my Network</a></li><li><a href="http://conservationecology.wordpress.com/" class="bump-view" data-bump-view="bif">Conservation Ecology</a></li><li><a href="http://arthropodecology.com/" class="bump-view" data-bump-view="bif">Arthropod Ecology</a></li><li><a href="http://thespinelesslife.blogspot.com/" class="bump-view" data-bump-view="bif">THE SPINELESS LIFE</a></li><li><a href="http://proopnarine.wordpress.com/" class="bump-view" data-bump-view="bif">Roopnarine's Food Weblog</a></li><li><a href="http://nothinginbiology.org/" class="bump-view" data-bump-view="bif">Nothing in Biology Makes Sense!</a></li><li><a href="http://theoreticalecology.wordpress.com/" class="bump-view" data-bump-view="bif">theoretical ecology</a></li><li><a href="http://oikosjournal.wordpress.com/" class="bump-view" data-bump-view="bif">Oikos Blog</a></li><li><a href="http://ecoevoevoeco.blogspot.com/" class="bump-view" data-bump-view="bif">Eco-Evo Evo-Eco</a></li><li><a href="http://evol-eco.blogspot.com/" class="bump-view" data-bump-view="bif">The EEB &amp; Flow</a></li><li><a href="http://jabberwocky.weecology.org/" class="bump-view" data-bump-view="bif">Jabberwocky Ecology</a></li><li><a href="http://www.imachordata.com/" class="bump-view" data-bump-view="bif">i'm a chordata! urochordata!</a></li><li><a href="http://contemplativemammoth.com/" class="bump-view" data-bump-view="bif">The Contemplative Mammoth</a></li><li><a href="http://theartofmodelling.wordpress.com/" class="bump-view" data-bump-view="bif">Just Simple Enough: The Art of Mathematical Modelling</a></li><li><a href="http://dynamicecology.wordpress.com/" class="bump-view" data-bump-view="bif">Dynamic Ecology</a></li></ol></li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+			<li><a href="https://wordpress.com/start?ref=wplogin">Register</a></li>			<li><a href="https://assemblingnetwork.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://assemblingnetwork.wordpress.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://assemblingnetwork.wordpress.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>			</ul>
+			</li>			</ul>
+		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="https://assemblingnetwork.wordpress.com/" title="Assembling my Network" rel="home">
+					Assembling my Network				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<!-- wpcom_wp_footer -->
+<div id="wpcom-follow-bubbles-jp_blogs_i_follow-2" class="wpcom-follow-bubbles"><div id="wpcom-bubble-jp_blogs_i_follow-2-1" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://blog.globalbioticinteractions.org/" class="bump-view" data-bump-view="bif">Global Biotic Interactions</a><p><small>Integrating Existing Species Interaction Datasets</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-2" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://lynchlab.com/" class="bump-view" data-bump-view="bif">Lynch Lab</a><p><small>for Quantitative Ecology</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-3" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://mathecolic.wordpress.com/" class="bump-view" data-bump-view="bif">MathEcol-ic</a><p><small>Views of a mathematical ecology PhD student</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-4" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://telliamedrevisited.wordpress.com/" class="bump-view" data-bump-view="bif">Telliamed Revisited</a><p><small>Evolutionary science: past, present, and future</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-5" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://ecologistatwork.blogspot.com/" class="bump-view" data-bump-view="bif">Ecologist At Work</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-6" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://scientificgems.wordpress.com/" class="bump-view" data-bump-view="bif">Scientific Gems</a><p><small>Facts, ideas, and images from the shoreline of science.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-7" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://bioteaching.com/" class="bump-view" data-bump-view="bif">Teaching Biology</a><p></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-8" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://theupturnedmicroscope.com/" class="bump-view" data-bump-view="bif">The Upturned Microscope</a><p><small>Musings of a biologian</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-9" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://earlycareerecologists.wordpress.com/" class="bump-view" data-bump-view="bif">Early Career Ecologists</a><p><small>Questioning, Researching, and Communicating our Science</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-10" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://laurelburytales.wordpress.com/" class="bump-view" data-bump-view="bif">The Laurelbury Tales</a><p><small>through my looking glass</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-11" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="https://assemblingnetwork.wordpress.com/" class="bump-view" data-bump-view="bif">Assembling my Network</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-12" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://conservationecology.wordpress.com/" class="bump-view" data-bump-view="bif">Conservation Ecology</a><p><small>Conservation and Ecology and everything between</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-13" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://arthropodecology.com/" class="bump-view" data-bump-view="bif">Arthropod Ecology</a><p><small>Writings about arthropod ecology, arachnids &amp; academia at McGill University</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-14" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://thespinelesslife.blogspot.com/" class="bump-view" data-bump-view="bif">THE SPINELESS LIFE</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-15" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://proopnarine.wordpress.com/" class="bump-view" data-bump-view="bif">Roopnarine's Food Weblog</a><p><small>My science of networks, food webs and extinction</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-16" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://nothinginbiology.org/" class="bump-view" data-bump-view="bif">Nothing in Biology Makes Sense!</a><p><small>Making sense of life as we know it, in the light of evolution.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-17" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://theoreticalecology.wordpress.com/" class="bump-view" data-bump-view="bif">theoretical ecology</a><p><small>notes from ecology, biogeography and evolution by Florian Hartig</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-18" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://oikosjournal.wordpress.com/" class="bump-view" data-bump-view="bif">Oikos Blog</a><p></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-19" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://ecoevoevoeco.blogspot.com/" class="bump-view" data-bump-view="bif">Eco-Evo Evo-Eco</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-20" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://evol-eco.blogspot.com/" class="bump-view" data-bump-view="bif">The EEB &amp; Flow</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-21" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://jabberwocky.weecology.org/" class="bump-view" data-bump-view="bif">Jabberwocky Ecology</a><p><small>Ethan White and Morgan Ernest's blog for discussing issues and ideas related to ecology and academia.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-22" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://www.imachordata.com/" class="bump-view" data-bump-view="bif">i'm a chordata! urochordata!</a><p><small>The ecology is theoretical but the fun is real.</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-23" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://contemplativemammoth.com/" class="bump-view" data-bump-view="bif">The Contemplative Mammoth</a><p><small>ice age ecology, early career academia, and diversity in STEM</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-24" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://theartofmodelling.wordpress.com/" class="bump-view" data-bump-view="bif">Just Simple Enough: The Art of Mathematical Modelling</a><p><small>Exploring the secrets of successful mathematical models</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-25" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://dynamicecology.wordpress.com/" class="bump-view" data-bump-view="bif">Dynamic Ecology</a><p><small>Multa novit vulpes</small></p></div></div></div><script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/assemblingnetwork.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/assemblingnetwork.wordpress.com\/wp-login.php?action=logout&_wpnonce=232836c928","homeURL":"https:\/\/assemblingnetwork.wordpress.com\/","postID":"311","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(4)"></script>
+
+	<div id="bit" class="loggedout-follow-normal" style="bottom: -299px;">
+		<a class="bsub" href="javascript:void(0)"><span id="bsub-text">Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow “Assembling my Network”</label></h3>
+
+			<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 597 other followers</p>
+			<p><input type="email" name="email" placeholder="Enter your email address" id="loggedout-follow-field"></p>
+
+			<input type="hidden" name="action" value="subscribe">
+			<input type="hidden" name="blog_id" value="14190654">
+			<input type="hidden" name="source" value="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/">
+			<input type="hidden" name="sub-type" value="loggedout-follow">
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="c0285b6ea8"><input type="hidden" name="_wp_http_referer" value="/2013/08/13/models-of-food-web-evolution/">
+			<p id="bsub-subscribe-button"><input type="submit" value="Sign me up"></p>
+			</form>
+					<div id="bsub-credit"><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/assemblingnetwork.wordpress.com\/2013\/08\/13\/models-of-food-web-evolution\/":311};
+	</script>
+	
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+		<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/form.js"></script>
+<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/widgets.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(5)"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "assemblingnetwork.wordpress.com";
+	</script>
+	<script type="text/javascript" src="./Models of food web evolution _ Assembling my Network_files/725X1342.skimlinks.js"></script>		<iframe src="./Models of food web evolution _ Assembling my Network_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			&lt;p class="robots-nocontent"&gt;&lt;img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=7518284&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cv=2.0&amp;cj=1" alt="" style="display:none;" width="1" height="1" /&gt;&lt;/p&gt;
+		</noscript><script src="./Models of food web evolution _ Assembling my Network_files/w.js" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'14190654','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'14190654','v':'wpcom','tz':'-4','user_id':'0','post':'311','subd':'assemblingnetwork'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lYixwbDJzRz1JUC9FMkZqenQuYk1UYVdkfGx2QX44RFRqVUxWc0RGNmU9WjUmbEVhcUxZLi5vUT02OXBFdi91QkJrRWV3aVRKalBaQjNvbyZ2U0g9LzAsWVFHW28/U0JfcD9SNVZobUxCQ0cwP0RJPWxXdC9GcXVQVCxyXUJUNXlfR284RD9TLkFDREdiSFNMTEpjJlk4MHBydVBqWS1nLiwzUy90ZDdmVVRJLkJWay9fWVFSNmxyZFRJQ2dqK0J0cD1IaDZDP2JXNUZBbENhND9WMmtyP2wwaS5QLXNyRk8/LFZSJkdxVS9za3UrLFRlNHJ8TktsN0wrQnBSLS9xWlksJkt1fGdXLjU0bWNUdmZBd1s/RUMsVmtnW3A4UG1fbXBpbmd1UGtJTXJldmlWSDIx'}]);
+_stq.push([ 'clickTrackerInit', '14190654', '311' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<div id="sharing_email" style="display: none;">
+		<form action="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="">
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="">
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="">
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off">
+			<script> document.getElementById('jetpack-source_f_name').value = ''; </script>
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo">
+			<img style="float: right; display: none" class="loading" src="./Models of food web evolution _ Assembling my Network_files/loading.gif" alt="loading" width="16" height="16">
+			<input type="submit" value="Send Email" class="sharing_send">
+			<a rel="nofollow" href="https://assemblingnetwork.wordpress.com/2013/08/13/models-of-food-web-evolution/#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div><img src="./Models of food web evolution _ Assembling my Network_files/g.gif" alt=":)" id="wpstats"><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" src="./Models of food web evolution _ Assembling my Network_files/saved_resource(12).html"></iframe><img src="./Models of food web evolution _ Assembling my Network_files/saved_resource(6)" width="1" height="1" style="display: none;"><img src="./Models of food web evolution _ Assembling my Network_files/saved_resource(7)" width="1" height="1" style="display: none;"><img src="./Models of food web evolution _ Assembling my Network_files/saved_resource(8)" width="1" height="1" style="display: none;"><img src="./Models of food web evolution _ Assembling my Network_files/saved_resource(9)" width="1" height="1" style="display: none;"></body></html>
