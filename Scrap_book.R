@@ -2,7 +2,9 @@ library(dplyr)
 library(ape)
 library(tidyr)
 library(purrr)
-source("branching.times.with.extinction.R")
+source("./R/branching.times.with.extinction.R")
+source("./R/simPhyloNetwork.R")
+source("./R/MatrixExp.eig.R")
 
 #' simulate a tree
 tree <- rtree(n = 20)
