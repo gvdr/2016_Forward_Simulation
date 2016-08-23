@@ -1,3 +1,4 @@
+library(phytools)
 library(dplyr)
 library(ape)
 library(tidyr)
@@ -6,10 +7,12 @@ source("./R/branching.times.with.extinction.R")
 source("./R/simPhyloNetwork.R")
 source("./R/MatrixExp.eig.R")
 
+set.seed(42)
+
 #' simulate a tree
-tree <- rtree(n = 20)
+tree <-pbtree(n=20,scale=1)
 #' select a discrete time step
-dt <- 0.01
+dt <- 0.001
 
 #' obtain the branching times
 b_times <- sort(branching.times.with.extinct(tree),decreasing = T)
@@ -41,7 +44,6 @@ branching_events <- seq_along(b_times) %>%
     }
   )
 
-
 #' I prefer to keep all the labels as integers, so they are lighter
 #' so here we build a table of original <-> shortened labels
 tree_tips <- tree$tip.label
@@ -62,12 +64,20 @@ N_steps <- tot_time / dt + 1
 to_from_labels <- cbind(rep(expand.grid(labelz$short,labelz$short)[,1],N_steps),
   rep(expand.grid(labelz$short,labelz$short)[,2],N_steps))
 
+nrow(expand.grid(labelz$short,labelz$short))
+
 net_series <- tibble(
-  from=to_from_labels[,1],
-  to=to_from_labels[,2]
+  from=integer(),
+  to=integer()
   ) %>%
   mutate(link=logical(1),
          to_exists = logical(1),
          from_exists = logical(1),
          time_step = rep(seq(0,tot_time,dt),each=nrow(labelz)^2))
 
+format(object.size(net_series),"auto")
+
+
+ltt_store <- ltt(tree)
+ltt_store$ltt
+ltt_store$times
