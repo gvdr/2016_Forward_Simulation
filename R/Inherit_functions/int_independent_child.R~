@@ -1,0 +1,12 @@
+int_indep_child <- function(current_interactions, mom_number){
+    mom_traits <- current_interactions[mom_number, ]
+    child <- sample(c("left", "right"), size = 1)
+    if(child == "left"){
+        child_l_traits <- mom_traits
+        child_r_traits <- 0
+    } else {
+        child_l_traits <- 0
+        child_r_traits <- mom_traits
+    }
+    return(rbind(child_l_traits, child_r_traits))
+}
