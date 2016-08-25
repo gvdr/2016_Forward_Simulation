@@ -10,3 +10,6 @@
   speciation events or with probabilities along the branches)
 - Creating edge lists with links, logical for existance, branching
   times.
+- Allowing the user to choose between different scenarios
+  (preferential attachment, nested networks, modular networks,
+  competitive interactions)

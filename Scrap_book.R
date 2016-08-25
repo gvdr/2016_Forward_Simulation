@@ -6,13 +6,20 @@ library(purrr)
 source("./R/branching.times.with.extinction.R")
 source("./R/simPhyloNetwork.R")
 source("./R/MatrixExp.eig.R")
+source("./R/Inherit_functions/int_exact_copy.R")
+source("./R/Inherit_functions/int_independent_child.R")
+source("./R/Inherit_functions/int_random_child.R")
+source("./R/Inherit_functions/new_network.R")
 
 set.seed(42)
 
 #' simulate a tree
-tree <-pbtree(n=20,scale=1)
+tree <-read.tree("data/tree_test.txt")
 #' select a discrete time step
 dt <- 0.001
+
+#' cartoon data
+data.test <- read.csv("data/data_test.csv")
 
 #' obtain the branching times
 b_times <- sort(branching.times.with.extinct(tree),decreasing = T)
