@@ -1,4 +1,4 @@
-evo_qrate_integrate <- function(edgelist, currlin, currtime, prevtime, q01, current_interactions){
+evo_qrate_integrate <- function(edgelist, currlin, currtime, prevtime, current_interactions, q01, ...){
     timeSpan <- abs(currtime - prevtime)
     qMatrix <- rbind(c(-1, 1), c(1, -1)) * q01
     tProb <- MatrixExp.eig(qMatrix*timeSpan)
@@ -6,7 +6,7 @@ evo_qrate_integrate <- function(edgelist, currlin, currtime, prevtime, q01, curr
     for(j in 1:length(currlin$current_edges)){
         for(k in 1:length(currlin$current_edges)){
             if(j != k){
-                if(sum(is.na(match(c(i,k), edgelist[which(edgelist$time.step == currlin$time), 1:2]))) != 0){
+                if(sum(is.na(match(c(j,k), edgelist[which(edgelist$time.step == currlin$time), 1:2]))) != 0){
                     r <- runif(1)
                     if(r < tProb[1,1]){
                         newint <- rbind(newint, data.frame(from = currlin$current_edges[j], to = currlin$current_edges[k], time.step = 0))

@@ -1,4 +1,4 @@
-int_exact_copy <- function(current_interactions, mom_number, child_l_number, child_r_number, new_time){
+int_exact_copy <- function(current_interactions, mom_number, child_l_number, child_r_number, new_time, ...){
     mom_traits <- current_interactions[which(current_interactions$from == mom_number), ]
     child_l_traits <- mom_traits
     child_l_traits$from <- child_l_number

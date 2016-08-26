@@ -1,8 +1,10 @@
-library(igraph)
-library(qgraph)
-tree <- read.tree("./data/tree_test.txt")
+library(ape)
+library(dplyr)
+tree <- ape::read.tree("./data/tree_test.txt")
 
 net.test <- netEvolve(tree, 0.1)
+net_evolved <- evolve_net(tree, inheriting = int_exact_copy, evolving = evo_qrate_integrate, q01 = 0)
+
 
 net35 <- as.matrix(net.test$edge_list[net.test$edge_list$time.step == net.test$extant_lineages[[35]]$time, 1:2])
 
