@@ -38,11 +38,12 @@ evolve_net <- function(phy, inheriting, evolving, ..., ancestral.interaction = T
         tmp <- rbind(tmp, newint)
         edgelist[seq(sum(edgelist[,1] != 0) + 1, sum(edgelist[,1] != 0) + dim(tmp)[1]), ] <- tmp
     } else {
+      #browser()
       tmp <- inheriting(
-        current_interactions = edgelist[which(edgelist$time.step == brtimes[i]), ],
+        current_interactions = edgelist[which(edgelist$time.step == brtimes[i-1]), ],
         mom_number = extlin[[i]]$mom,
         child_l_number = extlin[[i]]$childs[1],
-        child_r_number = extlin$childs[2],
+        child_r_number = extlin[[i]]$childs[2],
         new_time = 0,
         ...
       )
