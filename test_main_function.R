@@ -1,5 +1,6 @@
 library(ape)
 library(dplyr)
+
 tree <- ape::read.tree("./data/tree_test.txt")
 
 net.test <- netEvolve(tree, 0.1)
