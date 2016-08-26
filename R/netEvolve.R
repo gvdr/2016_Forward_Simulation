@@ -34,7 +34,7 @@ netEvolve <- function(phy, q01, inherits = "copy", ancestral.interaction = TRUE)
                     child_r_number = extlin[[i]]$childs[2],
                     new_time = extlin[[i]]$time
                 )
-                newint <- evo_qrate_integrate(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, q01, current_interactions)
+                newint <- evo_qrate_integrate(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, current_interactions, q01)
                 tmp <- rbind(tmp, newint)
                 edgelist[seq(sum(edgelist[,1] != 0) + 1, sum(edgelist[,1] != 0) + dim(tmp)[1]), ] <- tmp
             }
@@ -46,7 +46,7 @@ netEvolve <- function(phy, q01, inherits = "copy", ancestral.interaction = TRUE)
                 child_r_number = extlin$childs[2],
                 new_time = 0
             )
-            newint <- evo_qrate_integrate(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, q01, current_interactions)
+            newint <- evo_qrate_integrate(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, current_interactions, q01)
             tmp <- rbind(tmp, newint)
             edgelist[seq(sum(edgelist[,1] != 0) + 1, sum(edgelist[,1] != 0) + dim(tmp)[1]), ] <- tmp
         }
