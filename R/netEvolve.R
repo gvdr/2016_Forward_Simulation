@@ -27,6 +27,7 @@ netEvolve <- function(phy, q01, inherits = "copy", ancestral.interaction = TRUE)
     for(i in ii:length(extlin)){
         if(inherits == "copy"){
             if(i != length(extlin)){
+              browser()
                 tmp  <- int_exact_copy(
                     current_interactions = edgelist[which(edgelist$time.step == brtimes[i - 1]), ],
                     mom_number = extlin[[i]]$mom,
@@ -37,7 +38,8 @@ netEvolve <- function(phy, q01, inherits = "copy", ancestral.interaction = TRUE)
                 newint <- evo_qrate_integrate(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, current_interactions, q01)
                 tmp <- rbind(tmp, newint)
                 edgelist[seq(sum(edgelist[,1] != 0) + 1, sum(edgelist[,1] != 0) + dim(tmp)[1]), ] <- tmp
-            }
+            browser()
+              }
         } else {
             tmp <- int_exact_copy(
                 current_interactions = edgelist[which(edgelist$time.step == brtimes[i]), ],

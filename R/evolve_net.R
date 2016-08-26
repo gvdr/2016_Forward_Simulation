@@ -14,7 +14,9 @@ evolve_net <- function(phy, inheriting, evolving, ..., ancestral.interaction = T
     edgelist$to[2] = extlin[[1]]$childs[1]
     edgelist$time.step[c(1,2)] = extlin[[1]]$time
     ii <- 2
-  } else { # this part need to be updated with the corresponding scenario's functions
+  } else {
+    # Still doesn't work!
+    # this part need to be updated with the corresponding scenario's functions
     edgelist$mother[1] = extlin[[1]]$mom
     edgelist$child_l[1] = extlin[[1]]$childs[1]
     edgelist$child_r[1] = extlin[[1]]$childs[2]
@@ -26,6 +28,7 @@ evolve_net <- function(phy, inheriting, evolving, ..., ancestral.interaction = T
   
   for(i in ii:length(extlin)){
       if(i != length(extlin)){
+        browser()
         tmp  <- inheriting(
           current_interactions = edgelist[which(edgelist$time.step == brtimes[i - 1]), ],
           mom_number = extlin[[i]]$mom,
@@ -37,7 +40,9 @@ evolve_net <- function(phy, inheriting, evolving, ..., ancestral.interaction = T
         newint <- evolving(edgelist[which(edgelist$time.step == brtimes[i]), ], extlin[[i]], extlin[[i]]$time, extlin[[i-1]]$time, q01, current_interactions, ...)
         tmp <- rbind(tmp, newint)
         edgelist[seq(sum(edgelist[,1] != 0) + 1, sum(edgelist[,1] != 0) + dim(tmp)[1]), ] <- tmp
+        browser()
     } else {
+      browser()
       #browser()
       tmp <- inheriting(
         current_interactions = edgelist[which(edgelist$time.step == brtimes[i-1]), ],
